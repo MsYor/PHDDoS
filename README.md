@@ -18,7 +18,7 @@ PHDDoS py script with socks5 proxy Made by MsYor
 
 # Install/run
 ```
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 
-python3 [Method] [https://www.website.com] [Thread] [Time]
+python3 PHDDoS.py [Method] [https://www.website.com] [Thread] [Time]
 ```
