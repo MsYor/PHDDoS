@@ -63,7 +63,9 @@ method = [
 ]
 httpmethod = [
 	'GET',
-	'HEAD'
+	'PUT',
+	'PATCH'
+
 ]
 query = [
 	f'?{char()}'
