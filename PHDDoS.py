@@ -3,7 +3,7 @@
 """
 	PHDDoS
 	Code With <3 By MsYor
-	creds: FDc0d3, MrRage, Sussy
+	creds: FDc0d3, MrRage, Sussy, AnonPrixor
 
 	idk i made weird shit again :|
 	if you mod/edit, give me credit :)
@@ -24,7 +24,6 @@ try:
 	from requests import get
 	import certifi
 	import socks
-	import psutil
 except Exception as err:
 	exit(f"[!] {err}")
 
@@ -151,11 +150,6 @@ class PHDDoS:
 
 
 	@staticmethod
-	def checkCPU():
-		return f"{psutil.cpu_percent():.2f}%"
-
-
-	@staticmethod
 	def logging(timer):
 		timeout = timer
 		while timer > 0:
@@ -166,7 +160,7 @@ class PHDDoS:
 			minutes, seconds = divmod(timer, 60)
 			hours, minutes = divmod(minutes, 60)
 			timeleft = str(hours).zfill(2)+":"+str(minutes).zfill(2)+":"+str(seconds).zfill(2)
-			info(f"""{COLOR.GREEN}ATTACKING: {COLOR.WARNING}CPU: {COLOR.ATTACKING}{PHDDoS.checkCPU()}{COLOR.WARNING}
+			info(f"""{COLOR.GREEN}ATTACKING: {COLOR.WARNING}{COLOR.WARNING}
        METHOD: {COLOR.ATTACKING}{method.upper()} {COLOR.WARNING}
        HOST: {COLOR.ATTACKING}{PHDDoS.urlfixer(target)['host']} {COLOR.WARNING}
        PORT: {COLOR.ATTACKING}{PHDDoS.urlfixer(target)['port']} {COLOR.WARNING}
